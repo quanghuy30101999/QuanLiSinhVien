@@ -40,9 +40,10 @@ function myFunction(){
     }
     else {
         listSV.map((sv,index) => {
-            if(sv.MSSV == parseInt(MSSV))
+            if(sv.MSSV == parseInt(MSSV)){
                sv.Name = Name;
                sv.Email = Email;
+            }
         });
         title = document.getElementById('title').innerHTML = 'Thêm sinh viên'
     }
